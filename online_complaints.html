@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Complaints and Grievance Redressal</title>
+	<link rel ="stylesheet" href="online_complaints.css">
+</head>
+<body>
+	<header>
+		<h1>Online Complaints and Grievance Redressal</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Complaints and Grievances</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required><br><br>
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+				<label for="department">Select Department:</label>
+				<select id="department" name="department" required>
+					<option value="income-tax">Income Tax Department</option>
+					<option value="passport-office">Passport Office</option>
+					<option value="consumer-court">Consumer Court</option>
+				</select><br><br>
+				<label for="complaint-type">Type of Complaint:</label>
+				<select id="complaint-type" name="complaint-type" required>
+					<option value="delay">Delay in Processing</option>
+					<option value="misconduct">Misconduct by Officials</option>
+					<option value="corruption">Corruption</option>
+				</select><br><br>
+				<label for="complaint">Complaint Details:</label>
+				<textarea id="complaint" name="complaint" required></textarea><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2023 All rights reserved.</p>
+	</footer>
+</body>
+</html>

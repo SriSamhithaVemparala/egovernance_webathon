@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Registration and Licensing Form</title>
+	<link rel ="stylesheet" href="personal_info.css">
+</head>
+<body>
+	<h1>Registration and Licensing Form</h1>
+	<form>
+		<h2>Personal Information</h2>
+		<label for="fullname">Full Name:</label><br>
+		<input type="text" id="fullname" name="fullname" required><br><br>
+		
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="phone">Phone Number:</label><br>
+		<input type="tel" id="phone" name="phone" required><br><br>
+		
+		<label for="birthdate">Birthdate:</label><br>
+		<input type="date" id="birthdate" name="birthdate" required><br><br>
+		
+		<label for="gender">Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br><br>
+		
+		<label for="address">Address:</label><br>
+		<textarea id="address" name="address"></textarea><br><br>
+		
+		<h2>License Information</h2>
+		<label for="license_type">License Type:</label><br>
+		<select id="license_type" name="license_type" required>
+			<option value="">--Select License Type--</option>
+			<option value="driver">Driver's License</option>
+			<option value="professional">Professional License</option>
+			<option value="business">Business License</option>
+			<option value="other">Other License</option>
+		</select><br><br>
+		
+		<label for="license_number">License Number:</label><br>
+		<input type="text" id="license_number" name="license_number" required><br><br>
+		
+		<label for="license_expiry">License Expiry Date:</label><br>
+		<input type="date" id="license_expiry" name="license_expiry" required><br><br>
+		
+		<label for="license_issuing_authority">License Issuing Authority:</label><br>
+		<input type="text" id="license_issuing_authority" name="license_issuing_authority" required><br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
